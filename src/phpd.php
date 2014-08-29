@@ -173,7 +173,7 @@ class PHPD_INI {
   public static function load($iniFile) {
     // ';^[a-zA-Z0-9\-_\. \/]/.phpd.ini$;'
     if (empty($iniFile) || !preg_match('/^[a-zA-Z0-9\-\. \/]+\/\.phpd\.ini$/', $iniFile)) {
-      die("phpd.ini: Unspecified or malformed [$iniFile]\n");
+      die("phpd.ini: Unspecified or malformed\n");
     }
 
     if (! file_exists($iniFile)) {
